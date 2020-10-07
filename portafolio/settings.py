@@ -26,7 +26,7 @@ SECRET_KEY = 'hrj48*mobkzo)s6q+2wfqcg=_=@5c38n&sb4_vlp#bb^zyp_pi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'mariomeza.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'mariomesa.herokuapp.com']
 
 
 # Application definition
@@ -97,10 +97,10 @@ WSGI_APPLICATION = 'portafolio.wsgi.application'
 DATABASES ={
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd359blkm6jn8h1',
-        'USER': 'sxgdssxdojzihw',
-        'PASSWORD': '98060042f7b2ca9782ff8b10ee98e0bd460aab6526a47a2b1741f7dbbb0bb71c',
-        'HOST': 'ec2-54-161-58-21.compute-1.amazonaws.com',
+        'NAME': 'd2nkpmhnlt1qkd',
+        'USER': 'ojwqpdlpzxyerb',
+        'PASSWORD': '47a61a6a8628a58fdce5d47b82f7be0978d47153c5ed0b434354e80fccd02c78',
+        'HOST': 'ec2-23-20-70-32.compute-1.amazonaws.com',
         'PORT': 5432,
     }
 }
