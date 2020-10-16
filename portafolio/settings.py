@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'hrj48*mobkzo)s6q+2wfqcg=_=@5c38n&sb4_vlp#bb^zyp_pi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'mariomesa.herokuapp.com']
 
@@ -84,26 +84,26 @@ WSGI_APPLICATION = 'portafolio.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-# #LOCAL
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-#PRODUCTION
-DATABASES ={
+#LOCAL
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd2nkpmhnlt1qkd',
-        'USER': 'ojwqpdlpzxyerb',
-        'PASSWORD': '47a61a6a8628a58fdce5d47b82f7be0978d47153c5ed0b434354e80fccd02c78',
-        'HOST': 'ec2-23-20-70-32.compute-1.amazonaws.com',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#PRODUCTION
+# DATABASES ={
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd2nkpmhnlt1qkd',
+#         'USER': 'ojwqpdlpzxyerb',
+#         'PASSWORD': '47a61a6a8628a58fdce5d47b82f7be0978d47153c5ed0b434354e80fccd02c78',
+#         'HOST': 'ec2-23-20-70-32.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#     }
+# }
 
 
 
